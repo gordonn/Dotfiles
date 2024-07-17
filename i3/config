@@ -19,7 +19,7 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 exec --no-startup-id betterlockscreen -w dim
 
 # Alternative (set last used background)
-exec --no-startup-id source ~/.fehbg
+# exec --no-startup-id source ~/.fehbg
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
