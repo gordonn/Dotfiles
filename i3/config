@@ -77,6 +77,9 @@ bindsym $mod+Print exec --no-startup-id flameshot gui -d 5000
 #start rofi
 bindsym $mod+i exec --no-startup-id "rofi -show";
 
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
