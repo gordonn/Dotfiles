@@ -12,6 +12,7 @@
 set $mod Mod4
 
 exec_always --no-startup-id picom
+exec_always --no-startup-id feh --bg-scale ~/.config/wallpapers/macos-monterey.jpg
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
