@@ -2,4 +2,5 @@
 
 # Pretty & Functional i3WM Setup Guide
 
-### This guide is mainly for my own self reference when distro hopping but can be helpful for any newbs trying to replicate my setup.
+### This guide is mainly for self reference.
+
