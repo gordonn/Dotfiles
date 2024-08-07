@@ -1,3 +1,3 @@
-# i3WM setup
+# i3WM rice
 
-![rice](https://github.com/user-attachments/assets/1d34f222-3612-45cf-ab72-09f46f3a243b)
+![rice](https://github.com/user-attachments/assets/1b9f1d94-041e-4430-9692-09fd918d7e7e)
