@@ -5,10 +5,8 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
   config = function()
-    -- import mason
     local mason = require("mason")
 
-    -- import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
 
     local mason_tool_installer = require("mason-tool-installer")
@@ -31,12 +29,8 @@ return {
         "html",
         "cssls",
         "tailwindcss",
-        "svelte",
         "lua_ls",
-        "graphql",
         "emmet_ls",
-        "prismals",
-        "pyright",
       },
     })
 

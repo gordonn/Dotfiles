@@ -11,8 +11,9 @@
 
 set $mod Mod4
 
+exec_always --no-startup-id setxkbmap -option "ctrl:swapcaps"
 exec_always --no-startup-id picom
-exec_always --no-startup-id feh --bg-scale ~/.config/wallpapers/macos-monterey.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/wallpapers/gruvbox.png
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
@@ -71,6 +72,10 @@ bindsym $mod+Print exec --no-startup-id flameshot gui -d 5000
 
 #start rofi
 bindsym $mod+i exec --no-startup-id "rofi -show";
+
+# assign workspaces
+assign [class="firefox"] 2
+assign [class="Nautilus"] 3
 
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
@@ -210,32 +215,13 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
-set $rosewater #f5e0dc
-set $flamingo  #f2cdcd
-set $pink      #f5c2e7
-set $mauve     #cba6f7
-set $red       #f38ba8
-set $maroon    #eba0ac
-set $peach     #fab387
-set $yellow    #f9e2af
-set $green     #a6e3a1
-set $teal      #94e2d5
-set $sky       #89dceb
-set $sapphire  #74c7ec
-set $blue      #89b4fa
-set $lavender  #b4befe
-set $text      #cdd6f4
-set $subtext1  #bac2de
-set $subtext0  #a6adc8
-set $overlay2  #9399b2
-set $overlay1  #7f849c
-set $overlay0  #6c7086
-set $surface2  #585b70
-set $surface1  #45475a
-set $surface0  #313244
-set $base      #1e1e2e
-set $mantle    #181825
-set $crust     #11111b
+set $rosewater #ebdbb2
+set $mauve     #83a598
+set $peach     #fe8019
+set $text      #fbf1c7
+set $overlay0  #665c54
+set $base      #32302f
+set $mantle    #282828
 
 # target                 title     bg    text      indicator    border
 client.focused           $mantle   $mauve $mantle  $rosewater $mauve
@@ -249,7 +235,7 @@ client.background        $base
 for_window [class=".*"] border pixel 1, move
 
 # Configure 5px of space between windows and to the screen edges.
-gaps inner 12
+gaps inner 16
 
 # Configure an additional 5px of extra space to the screen edges,
 # for a total gap of 10px to the screen edges, and 5px between windows.

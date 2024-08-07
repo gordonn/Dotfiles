@@ -6,8 +6,10 @@ opt.relativenumber = true
 
 opt.number = true
 
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.colorcolumn = "80"
+
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
@@ -29,3 +31,12 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.virtualedit = "block"
+
+opt.fillchars = { eob = " " }
+
+opt.scrolloff = 999
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  command = [[%s/\s\+$//e]],
+})
