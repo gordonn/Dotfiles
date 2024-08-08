@@ -12,7 +12,7 @@ configuration {
 	bg:	#282828cc;
 	fg:	#ebdbb2;
 	background:	#d3869b;
-	input: #32302fdd;
+	input: #32302f90;
 
 	background-color:	@bg;
 	text-color:	@fg;
