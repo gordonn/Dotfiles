@@ -21,32 +21,32 @@ return {
       normal = {
         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.seperator, fg = colors.fg },
-        c = { bg = colors.bg, fg = colors.fg },
+        c = { bg = "NONE", fg = colors.fg },
       },
       insert = {
         a = { bg = colors.green, fg = colors.bg, gui = "bold" },
         b = { bg = colors.seperator, fg = colors.fg },
-        c = { bg = colors.bg, fg = colors.fg },
+        c = { bg = "NONE", fg = colors.fg },
       },
       visual = {
         a = { bg = colors.violet, fg = colors.bg, gui = "bold" },
         b = { bg = colors.seperator, fg = colors.fg },
-        c = { bg = colors.bg, fg = colors.fg },
+        c = { bg = "NONE", fg = colors.fg },
       },
       command = {
         a = { bg = colors.yellow, fg = colors.bg, gui = "bold" },
         b = { bg = colors.seperator, fg = colors.fg },
-        c = { bg = colors.bg, fg = colors.fg },
+        c = { bg = "NONE", fg = colors.fg },
       },
       replace = {
         a = { bg = colors.red, fg = colors.bg, gui = "bold" },
         b = { bg = colors.seperator, fg = colors.fg },
-        c = { bg = colors.bg, fg = colors.fg },
+        c = { bg = "NONE", fg = colors.fg },
       },
       inactive = {
-        a = { bg = colors.inactive_bg, fg = colors.semilightgray, gui = "bold" },
+        a = { bg = "NONE", fg = colors.semilightgray, gui = "bold" },
         b = { bg = colors.seperator, fg = colors.semilightgray },
-        c = { bg = colors.inactive_bg, fg = colors.semilightgray },
+        c = { bg = "NONE", fg = colors.semilightgray },
       },
     }
 
